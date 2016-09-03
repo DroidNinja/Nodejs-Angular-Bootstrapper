@@ -1,5 +1,5 @@
 # Nodejs-Angular-Bootstrapper
-this is bootstrap structure for nodejs + angular architecture with local,facebook and google authentication integrated.
+This is bootstrap structure for nodejs + angular architecture with local,facebook and google authentication integrated. The database structure for login mechanism is based on unique email address i.e. same email addresses from different login strategies will only be linked to one single account.
 
 # Demo
 
