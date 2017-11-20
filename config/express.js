@@ -18,7 +18,7 @@ var config = require('./config');
 var winston = require('./winston');
 require('./../app/utils/route-group');
 
-module.exports = function(app, passport) {
+module.exports = function(app) {
 
     winston.info('Initializing Express');
 
@@ -67,10 +67,6 @@ module.exports = function(app, passport) {
 
     //dynamic helpers
     app.use(helpers(config.app.name));
-
-    //use passport session
-    app.use(passport.initialize());
-    app.use(passport.session());
 
     app.use(function(req, res, next) {
         console.log('-- session --');
